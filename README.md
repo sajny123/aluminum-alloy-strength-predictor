@@ -12,15 +12,15 @@ This project predicts the tensile strength of aluminum alloys using machine lear
 
 ## Methodology
 
-1. Preprocessing Pipeline
+### 1. Preprocessing Pipeline
 
-Data Cleaning: Removed redundant identifiers (e.g., 'Grade') to prevent multicollinearity.
+**Data Cleaning**: Removed redundant identifiers (e.g., 'Grade') to prevent multicollinearity.
 
-Feature Engineering: Applied PolynomialFeatures(degree=2) to capture non-linear relationships (e.g., the quadratic decay of strength vs. temperature) and chemical interactions (e.g., $Mg \times Si$).
+**Feature Engineering**: Applied PolynomialFeatures(degree=2) to capture non-linear relationships (e.g., the quadratic decay of strength vs. temperature) and chemical interactions (e.g., $Mg \times Si$).
 
-Scaling: Applied StandardScaler to both Inputs ($X$) and Target ($y$) to ensure stability for distance-based models (SVR/GPR).
+**Scaling**: Applied StandardScaler to both Inputs ($X$) and Target ($y$) to ensure stability for distance-based models (SVR/GPR).
 
-2. Models Benchmarked
+### 2. Models Benchmarked
 
 Multiple Linear Regression (Baseline)
 

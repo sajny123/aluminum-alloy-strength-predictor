@@ -34,7 +34,6 @@ def evaluate_model(model, X_test, y_test_scaled, scaler):
     plt.axhline(0, color='red', linestyle='--')
     plt.xlabel("Predicted Tensile Strength (MPa)")
     plt.ylabel("Residuals (Error in MPa)")
-    plt.title("Residual Plot: Look for Random Scatter")
     plt.show()
 
 # Apply linear regression model
@@ -66,7 +65,6 @@ evaluate_model(model, X_test, y_test, scaler_y)
 # plt.figure(figsize=(10, 6))
 # plt.barh(df_active['Feature'].head(10), df_active['Coefficient'].head(10))
 # plt.xlabel("Impact on Strength (Scaled Coefficient)")
-# plt.title("What is actually driving your Model?")
 # plt.axvline(0, color='black', linewidth=0.8)
 # plt.grid(axis='x', linestyle='--', alpha=0.7)
 # plt.gca().invert_yaxis()
